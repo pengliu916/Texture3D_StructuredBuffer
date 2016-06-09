@@ -536,7 +536,7 @@ namespace Graphics
 
 	void UpdateGUI()
 	{
-		if (ImGui::CollapsingHeader( "Stats", (const char*)0, true, true ))
+		if (ImGui::CollapsingHeader( "Stats", (const char*)0, true, false ))
 		{
 			HRESULT hr;
 			V( Graphics::g_adaptor->QueryVideoMemoryInfo( 0, DXGI_MEMORY_SEGMENT_GROUP_LOCAL, &Graphics::g_stats.localVideoMemoryInfo ) );
